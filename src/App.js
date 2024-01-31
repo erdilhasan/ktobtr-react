@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Route, Routes } from 'react-router-dom';
+import CustomNavbar from './components/CustomNavBar';
+import Placeholder from './components/placeholder';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+<CustomNavbar></CustomNavbar>   
+      <Routes>
+        <Route path='/' element={<h1>Anasayfa</h1>}/>
+        <Route path='/bizkimiz' element={<h1>Biz Kimiz</h1>}/>
+        <Route path='/iletisim' element={<h1>iletişim</h1>}/>
+      </Routes>
+   
+    </>
   );
 }
 
