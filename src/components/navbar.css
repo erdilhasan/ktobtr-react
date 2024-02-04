@@ -8,12 +8,12 @@
       justify-content: space-between;}
 
       .navitem{
+        border-radius: 9999px;
         padding: 10px;
       }
     
       .navitem:hover{
-      
-      border-radius: 5px;
+      border-radius: 9999px;
       background-color: rgba(0, 0, 0, 0.058);
       }
 
